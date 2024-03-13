@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: white;
+    background: linear-gradient(135deg, #333333, #1a1a1a, #000000);
+    background-color: linear-gradient(180deg, #333333, #1a1a1a, #000000, #8b15be, #8b15be );
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #8b15be;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #8b15be;
+}

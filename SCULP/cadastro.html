@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastro/cadastro.css">
+  <title>Cadastro</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Cadastro</h2>
+    </div>
+
+        <!--Usuario-->
+    <form class="form" id="form">
+      <div class="form-control">
+        <label>Usuário</label>
+        <input type="text" placeholder="username" id="username">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error</small>
+      </div>
+      <div class="form-control">
+        <label>Email</label>
+        <input type="email" placeholder="seunome@dominio.com" id="email">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error </small>
+      </div>
+      <div class="form-control">
+        <label>Senha</label>
+        <input type="password" placeholder="password" id="password">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error</small>
+      </div>
+      <div class="form-control">
+        <label>Confirme a senha</label>
+        <input type="password" placeholder="confirm password" id="confirm">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error</small>
+      </div>
+      <button onsubmit type="submit">Cadastrar</button>
+    </form>
+  </div>
+  <script src="cadastro/script.js"></script>
+</body>
+</html>

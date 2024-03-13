@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento com PIX</title>
+    <link rel="stylesheet" href="pagamento.css">
+</head>
+<body>
+
+    <h2 style="text-align: center;">Pagamento com PIX</h2>
+
+    <form id="paymentForm" action="/processar_pix" method="post">
+        <label for="chave_pix">Chave PIX:</label>
+        <input type="text" id="chave_pix" name="chave_pix" readonly>
+
+        <label for="valor">Valor:</label>
+        <input type="text" id="valor" name="valor" value="50.00" readonly>
+
+        <button type="submit">Pagar com PIX</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

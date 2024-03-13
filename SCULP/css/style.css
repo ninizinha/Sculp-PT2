@@ -1,0 +1,305 @@
+/* Estilo para o cabeçalho */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #333333, #1a1a1a, #000000); /* Gradiente de cores estilo grafite */
+  background: linear-gradient(180deg, #333333, #1a1a1a, #000000, #8b15be, #8b15be ); /* Adicione as cores roxo escuro, vermelho neon, amarelo neon, verde neon e azul neon */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.banner{
+  mix-blend-mode:normal;
+  background-color: transparent;
+  height: 400px;
+  width: 800px;
+}
+
+/* Estilo para o menu de navegação */
+
+.menu {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: darkmagenta;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+/* Estilo para a seção principal */
+main {
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+main p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.sculpinicio{
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 370px;
+  margin-right: 370px;
+  margin-bottom: 30px;
+  
+}
+
+/* Estilo para a lista de produtos */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.prod{
+  text-align: center;
+}
+
+/* Estilo para o rodapé */
+/* Estilo para o rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  /* Remova a propriedade "position: absolute;" */
+  width: 100%;
+}
+
+/* Estilo para o formulário de contato */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Estilo para os cards de produtos */
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card img {
+  max-width: 32%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 485px;
+}
+
+.card img chaveiro3{
+  margin-left: 450px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+/* Estilo para o corpo do site */
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8b15be;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Esta propriedade garante que o conteúdo preencha toda a altura da janela de visualização */
+}
+
+.slideshow {
+  display: flex;
+  overflow: hidden;
+  width: 400px; 
+  height: 500px;
+  margin-bottom: 20px;
+  margin: 0 auto; /* Centraliza o slideshow horizontalmente */
+  
+}
+
+.slide {
+  flex: 0 0 100%;
+  /* transition: transform 1s ease; /* Efeito de transição suave */
+  animation: slideAnimation 10s infinite;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Animação para deslocar os slides para o lado */
+@keyframes slideAnimation {
+  0% {
+      transform: translateX(0);
+  }
+  33.33% {
+      transform: translateX(-100%);
+  }
+  66.66% {
+      transform: translateX(-200%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.slide:nth-child(1) {
+  animation: slideAnimation 9s infinite ; 
+}
+
+.slide:nth-child(2) {
+  animation: slideAnimation 9s infinite ; /* Inicia após 1 segundo */
+}
+
+.slide:nth-child(3) {
+  animation: slideAnimation 9s infinite ; /* Inicia após 2 segundos */
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+/* botão Elisa */
+
+#button1 {
+    background-color: #3498db;
+} 
+
+#button2 {
+    background-color: #f17ea1;
+}
+
+#button3 {
+    background-color: #2ecc71;
+}
+
+/* botão RHUAN */
+
+#button5 {
+  background-color: #e6ff03;
+} 
+
+#button6 {
+  background-color: #e74c3c;
+}
+
+#button7 {
+  background-color: #2ecc71;
+}
+
+/* botão NICOLE */
+
+#button8 {
+  background-color: #f17ea1;
+} 
+
+#button9 {
+  background-color: #f30ce7;
+}
+
+.selected {
+    border: 2px solid #fff;
+}
+
+
+/* ... (outros estilos) ... */
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
